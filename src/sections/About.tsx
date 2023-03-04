@@ -1,0 +1,61 @@
+// Copyright (c) 2023 Mahendra Prasad T
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
+import { Container, Row, Col } from "react-bootstrap";
+import styled from "styled-components";
+import Image from "../components/Image";
+
+const AboutWrapper = styled.section`
+  background-color: var(--pri-bg-color);
+  color: var(--pri-fg-color);
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export default function About() {
+  return (
+    <AboutWrapper id="about">
+      <Container>
+        <Row className="justify-content-center gx-5">
+          <Col md={12} lg={6}
+            className="p-3 d-flex flex-column justify-content-center order-last order-lg-first"
+          >
+            <h3 className="text-center text-lg-start">
+              About
+            </h3>
+            <hr className="w-100"/>
+            <p className="text-center text-lg-start">
+              Hello, I am  Mahendra Prasad T a student from TamilNadu,
+              Currently studying Information Technology at Anna University,
+              Trichy. I am a self-taught developer and I love to learn new
+              things. Other than programming I love watch movies.
+              <br /><br />
+              I was born in Tittakudi, which is in Cuddalore. I have
+              completed my schooling in Sree Vaijanthee Vidhyalaya Matric Higher Secondary
+              School. After that,I Completed Diploma in Mechanical Engineering,Later  I joined Information Technology at Anna
+              University (University College of engineering), Trichy.
+              <br /><br />
+              Since 10<sup>th</sup> std I'm in love with Programming.
+              I started with C After that I learned Some languages and
+              tools and going to learn new things.
+            </p>
+          </Col>
+          <Col md={12} lg={5}
+            className="p-3 d-flex flex-column justify-content-center order-first order-lg-last"
+          >
+            <Image
+              src={require('./../assets/images/me.jpg')}
+              alt="Mahendra Prasad"
+              style={{ width: '280px', height: '280px' }}
+            />
+          </Col>
+        </Row>
+      </Container>
+    </AboutWrapper>
+  );
+}
