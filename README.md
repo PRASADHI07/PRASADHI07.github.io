@@ -1,6 +1,6 @@
 # Personal website
 
-This is the source code for my personal website, which is hosted at [https://prasad792002.github.io](https://prasad792002.github.io).
+This is the source code for my personal website, which is hosted at [https://PRASADHI07.github.io](https://prasad792002.github.io).
 
 ## License
 
